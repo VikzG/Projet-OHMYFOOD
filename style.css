@@ -92,6 +92,7 @@ nav {
   position: relative;
   margin-bottom: 8%;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   gap: 5%;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -99,8 +100,20 @@ nav {
   height: 75px;
 }
 
+.cardnav:active {
+  background-color: #F5EDFF;
+}
+
+.nav_title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+}
+
 .iconnav {
   color: #7E7E7E;
+  font-size: 20px;
+  margin-left: 10%;
 }
 
 .numnav {
@@ -108,6 +121,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  left: -10px;
   width: 24px;
   height: 24px;
   color: white;
@@ -144,6 +158,9 @@ nav {
 .cardtext {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 45%;
+  padding: 2%;
 }
 
 .cardname {
@@ -151,9 +168,16 @@ nav {
   flex-direction: column;
 }
 
+.icone_heart {
+  font-size: 25px;
+}
+
 footer {
   background-color: #353535;
   color: white;
+  margin: 0;
+  padding: 5%;
+  justify-content: flex-start;
 }
 
 .footertitle {
@@ -161,14 +185,21 @@ footer {
   font-size: 18px;
 }
 
+.footerlist {
+  padding: 0;
+}
+
 ul {
   list-style-type: none;
 }
 
 li {
+  display: flex;
+  gap: 2%;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 16px;
+  margin: 2%;
 }
 
 a {
