@@ -28,14 +28,22 @@ h3 {
 h4 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   margin: 2%;
+  width: 110%;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin: 0;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  margin: 2%;
 }
 
 .logo {
@@ -135,6 +143,13 @@ nav {
   background-color: #EAEAEA;
 }
 
+.titre_rest {
+  font-family: "Roboto", sans-serif;
+  font-style: bold;
+  font-size: 24px;
+  margin-left: 5%;
+}
+
 .imgcard {
   width: 100%;
   height: 150px;
@@ -145,27 +160,45 @@ nav {
 }
 
 .cardrest {
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #ffffff;
   border-radius: 20px;
-  width: 90%;
-  box-shadow: 2px 2px 50px darkgray;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   margin: 20px;
+}
+
+.nouveau {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #008766;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 2%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  right: 4%;
+  top: 6%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
 .cardtext {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 45%;
-  padding: 2%;
+  justify-content: space-between;
+  padding: 5%;
 }
 
 .cardname {
   display: flex;
   flex-direction: column;
+  align-content: flex-start;
 }
 
 .icone_heart {
