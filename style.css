@@ -201,10 +201,6 @@ nav {
   align-content: flex-start;
 }
 
-.icone_heart {
-  font-size: 25px;
-}
-
 footer {
   background-color: #353535;
   color: white;
@@ -238,4 +234,21 @@ li {
 a {
   text-decoration: none;
   color: white;
+}
+
+.icone_heart {
+  font-size: 25px;
+  border-style: none;
+  background-color: white;
+}
+
+.fa-heart {
+  color: #7E7E7E;
+  transition: transform 500ms, color 500ms;
+}
+
+.fa-heart:active {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #9356DC;
 }/*# sourceMappingURL=style.css.map */
