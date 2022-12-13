@@ -36,7 +36,7 @@ h4 {
     font-style: normal;  
     font-size: 18px; 
     margin: 2%; 
-    width: 110%;  
+    white-space: nowrap;
 }
 
 h5 {
@@ -186,8 +186,8 @@ nav {
     font-style: bold;  
     font-size: 24px;
     background-color: $light-grey;
-    padding: 5%;
-    padding-top: 10%;
+    padding: 20px;
+    padding-top: 50px;
     margin: 0;
 }
 
@@ -292,25 +292,40 @@ a {
 
 .icone_heart {
 
+    position: relative;
     font-size: 25px;
     border-style: none;
     background-color: white;
-}
-
-.fa-heart {
-
- color: $grey;
- transition: transform 500ms, color 500ms ease-in-out;
+    align-items: center;
+    display: flex;
 }
 
 
-.fa-heart:active {
+.icone_heart_vide {
+
+    color: $grey;   
+
+}
+
+
+.icone_heart_plein {
+
+    color: $grey;
+    position: absolute;
+    transition: color 500ms ease-in-out;
+    opacity: 0;
+}
+
+
+.icone_heart_plein:active {
 
     cursor: pointer;
 
-    transform: scale(1.5);
     color: $purple;
+    opacity: 1;
 }
+
+
 
 @media screen and (min-width: 1440px) {
 
@@ -332,7 +347,7 @@ h1 {
 
 h2 {
 
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .entete {
@@ -340,13 +355,18 @@ h2 {
     padding: 5%;
 }
 
-nav {
+main {
 
-    padding: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+   background-color: $light-grey; 
+   padding-bottom: 100px;
 }
 
+nav {
+
+    padding: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .nav_menu {
 
     display: flex;
@@ -374,21 +394,28 @@ nav {
 
 }
 
+.titre_rest {
+
+    margin-left:200px;
+}
+
 .bloc_cards {
 
     flex-direction: row;
+    margin-left: 200px;
     overflow: scroll;
-}
-
-.titre_rest {
-
-    padding-left: 15%;
-    padding-top: 5%;
 }
 
 .cardrest {
 
-    width: 25%;
+    min-width: 320px;
+
+}
+
+footer {
+
+    padding: 0;
+    padding-top: 20px;
 }
 
 .footercolonne {
@@ -397,15 +424,28 @@ nav {
     flex-direction: row-reverse;
 }
 
+.footertitle {
+
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
 .footerlist {
 
     display: flex;
     flex-direction: row;
+    margin-right: 150px;
 }
 
 li {
 
-    flex-direction: row;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+ul {
+
+    gap : 20px
 }
 
 }
