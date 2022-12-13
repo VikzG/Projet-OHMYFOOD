@@ -276,6 +276,14 @@ a {
   opacity: 1;
 }
 
+.imgcard_pages {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
 @media screen and (min-width: 1440px) {
   .logo {
     margin: 2%;
