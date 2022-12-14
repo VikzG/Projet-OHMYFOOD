@@ -44,7 +44,9 @@ h5 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 17px;
-    margin: 2%
+    margin: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 p {
@@ -325,12 +327,124 @@ a {
     opacity: 1;
 }
 
+/* Style ajouté pour les menus */
+
 .imgcard_pages {
 
     width: 100%;
     height: 275px;
     object-fit: cover;
     display: block;
+}
+
+.titre_menu {
+
+    font-family: 'Shrikhand';
+    font-weight: 400;
+    font-size: 28px;        
+}
+
+.titre_menu_log {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 25px;
+    gap: 8%;
+    padding-top: 10%;
+}
+
+.partie_menu {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;     
+    display: flex;
+    justify-self: flex-start;
+    margin-left: 15px;
+}
+
+.line_mint {
+
+    border-top: solid;
+    color: $mint;
+    width: 45px;
+    margin-left: 15px;
+    margin-bottom: 5%;
+
+}
+
+.card_menu {
+
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin-bottom: 8%;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    height: 75px;
+    background-color: #ffffff;  
+    white-space: nowrap;
+    margin-left: 5px;
+}
+
+.card_menu_des {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.partie_colonne  {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prix {
+
+    display: flex;
+    align-self: flex-end;
+
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.btnstyle2 {
+
+    width:218px;
+    height:50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10%;
+    margin-left: 22%;
+
+    color: white;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border: 0;
+    filter: brightness(1);
+    transition: filter 500ms, box-shadow 500ms ease-in-out;
+}
+
+.btnstyle2:active {
+
+    filter:brightness(1.25);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.main_deco {
+
+    border-radius: 10%;
+    background-color: $very_light_grey;
 }
 
 
