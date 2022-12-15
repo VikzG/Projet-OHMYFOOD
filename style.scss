@@ -475,6 +475,25 @@ a {
 
 }
 
+.card_menu_anim {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.carre_anim {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mint;
+    border-radius: 0px 15px 15px 0px;
+    width: 59px;
+    height: 69px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
 
 
 @media screen and (min-width: 1440px) {
