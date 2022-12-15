@@ -348,6 +348,27 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  opacity: 0;
+  -webkit-animation: menu_apparition 1500ms 400ms ease-out forwards;
+          animation: menu_apparition 1500ms 400ms ease-out forwards;
+}
+
+.partie_colonne2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  -webkit-animation: menu_apparition 1500ms 800ms ease-out forwards;
+          animation: menu_apparition 1500ms 800ms ease-out forwards;
+}
+
+.partie_colonne3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  -webkit-animation: menu_apparition 1500ms 1200ms ease-out forwards;
+          animation: menu_apparition 1500ms 1200ms ease-out forwards;
 }
 
 .prix {
@@ -380,10 +401,23 @@ a {
 }
 
 .main_deco {
-  border-radius: 10%;
   background-color: #F7F7F7;
+  margin: 0;
 }
 
+@-webkit-keyframes menu_apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes menu_apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 @media screen and (min-width: 1440px) {
   .logo {
     margin: 2%;
