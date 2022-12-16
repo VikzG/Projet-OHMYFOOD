@@ -423,18 +423,20 @@ a {
   flex-direction: row;
 }
 
+/*
 .carre_anim {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #99E2D0;
-  border-radius: 0px 15px 15px 0px;
-  width: 59px;
-  height: 69px;
-  color: #ffffff;
-  font-size: 25px;
-}
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mint;
+    border-radius: 0px 15px 15px 0px;
+    width: 59px;
+    height: 69px;
+    color: #ffffff;
+    font-size: 25px;
+}
+*/
 @media screen and (min-width: 1440px) {
   .logo {
     margin: 2%;
@@ -454,7 +456,6 @@ a {
   }
   main {
     background-color: #EAEAEA;
-    padding-bottom: 100px;
   }
   nav {
     padding: 200px;
@@ -489,6 +490,7 @@ a {
     flex-direction: row;
     margin-left: 200px;
     overflow: scroll;
+    padding-bottom: 5%;
   }
   .cardrest {
     min-width: 320px;
@@ -516,5 +518,33 @@ a {
   }
   ul {
     gap: 20px;
+  }
+  /* Style ajouté pour les menus en responsive*/
+  .main_deco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    padding-left: 25%;
+  }
+  .card_menu {
+    width: 60%;
+    margin-bottom: 2%;
+    justify-self: center;
+  }
+  .titre_menu_log {
+    padding-top: 0;
+    padding-left: 100px;
+    gap: 2%;
+  }
+  .partie_menu {
+    margin-bottom: 1%;
+  }
+  .line_mint {
+    margin-bottom: 1%;
+  }
+  .btnstyle2 {
+    margin-bottom: 5%;
+    margin-top: 4%;
   }
 }/*# sourceMappingURL=style.css.map */
