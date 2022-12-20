@@ -252,6 +252,7 @@ nav {
 
 footer {
 
+    display: flex;
     background-color: $dark-grey;
     color: white;
     margin: 0;
@@ -283,6 +284,7 @@ li {
     font-style: normal;  
     font-size: 16px; 
     margin: 2%;
+    white-space: nowrap;
 
 }
 
@@ -359,8 +361,8 @@ a {
     align-items: center;
     margin-left: 15px;
     font-size: 25px;
-    gap: 8%;
     padding-top: 10%;
+    gap: 8%;
 }
 
 .partie_menu {
@@ -412,8 +414,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 0;
-    animation: menu_apparition 1500ms 400ms ease-out forwards
+    animation: menu_apparition 500ms 0ms ease-out forwards
 }
 
 .partie_colonne2  {
@@ -421,8 +422,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 0;
-    animation: menu_apparition 1500ms 800ms ease-out forwards
+    animation: menu_apparition 1500ms 0ms ease-out forwards
 }
 
 .partie_colonne3  {
@@ -430,8 +430,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 0;
-    animation: menu_apparition 1500ms 1200ms ease-out forwards
+    animation: menu_apparition 2500ms 0ms ease-out forwards
 }
 
 .prix {
@@ -470,14 +469,16 @@ a {
 
 .main_deco {
 
-    background-color: $very_light_grey;
-    margin: 0;
-}
+    background-color: $very_light_grey ;
+ }
+
 
 @keyframes menu_apparition {
+    0% {
+        opacity: 0;
+    }
     100% {
         opacity: 1;
-        transform: none;
     }
 
 }
@@ -532,9 +533,9 @@ h2 {
     padding: 5%;
 }
 
-main {
+.main_background {
 
-   background-color: $light-grey; 
+    background-color: $light-grey;
 }
 
 nav {
@@ -593,6 +594,7 @@ footer {
 
     padding: 0;
     padding-top: 20px;
+    justify-content: flex-end;
 }
 
 .footercolonne {
@@ -629,11 +631,7 @@ ul {
 
 .main_deco {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-self: center;
-    padding-left: 25%;
+    max-width: 900px;
 }
 
 
