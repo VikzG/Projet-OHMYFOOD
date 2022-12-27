@@ -406,7 +406,13 @@ a {
 
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 230px;
+}
+
+.prix_carre {
+
+    display: flex;
+    flex-direction: row;
 }
 
 .partie_colonne  {
@@ -441,7 +447,7 @@ a {
     font-weight: 700;
 
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .btnstyle2 {
@@ -474,6 +480,7 @@ a {
     position: absolute;
     top: 45%;
     width: 100%;
+    overflow: hidden;
 
 }
 
@@ -517,6 +524,7 @@ a {
 
 .fa-circle-check {
 
+    visibility: hidden;
     transition: 500ms ease-in;
     transform: rotate(0deg);
 }
@@ -530,7 +538,7 @@ a {
         cursor: pointer;
 
         .fa-circle-check {
-
+            visibility: visible;
             transform: rotate(360deg);
         }
     }
@@ -684,6 +692,11 @@ ul {
 .card_menu {
 
     margin-bottom: 1%;
+}
+
+.card_menu_des {
+
+    width: 380px;
 }
 
 .titre_menu_log {
