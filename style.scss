@@ -56,6 +56,57 @@ p {
     margin: 0;
 }
 
+.loader_home {
+
+    position: absolute;
+    background: white;
+    width:100vw;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    animation: opacity_anim 3000ms ease-out
+}
+
+
+.dot {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 15px;
+    animation: animload infinite 300ms alternate;
+}
+
+.d2 {
+
+    animation-delay: 0.05s;
+}
+
+.d3 {
+
+    animation-delay: 0.1s;
+}
+
+
+
+@keyframes animload {
+
+    100% {
+        transform: translatey(-30px);
+    }
+}
+
+@keyframes opacity_anim {
+
+
+    100% {
+        opacity: 0;
+    }
+}
 
 .logo {
 
