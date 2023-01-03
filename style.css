@@ -7,7 +7,7 @@ body {
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-style: bold;
+  font-weight: 700;
   font-size: 24px;
   text-align: center;
   margin: 0;
@@ -15,14 +15,14 @@ h1 {
 
 h2 {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 18px;
   text-align: center;
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
-  font-style: bold;
+  font-weight: 700;
   font-size: 24px;
 }
 
@@ -58,8 +58,8 @@ p {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  -webkit-animation: opacity_anim 3000ms ease-out;
-          animation: opacity_anim 3000ms ease-out;
+  -webkit-animation: opacity_anim 3000ms ease-out both;
+          animation: opacity_anim 3000ms ease-out both;
 }
 
 .dot {
@@ -95,13 +95,29 @@ p {
   }
 }
 @-webkit-keyframes opacity_anim {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+    z-index: 1;
+  }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes opacity_anim {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+    z-index: 1;
+  }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 .logo {
@@ -214,7 +230,7 @@ nav {
 
 .titre_rest {
   font-family: "Roboto", sans-serif;
-  font-style: bold;
+  font-weight: 700;
   font-size: 24px;
   background-color: #EAEAEA;
   padding: 20px;
