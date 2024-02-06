@@ -56,6 +56,8 @@ p {
     margin: 0;
 }
 
+/* Loader */
+
 .loader_home {
 
     position: absolute;
@@ -117,6 +119,8 @@ p {
        z-index: -1;
     }
 }
+
+/* Fin du loader */
 
 .logo {
 
@@ -355,6 +359,8 @@ a {
     color: white;
 }
 
+/*  bouton coeur */
+
 .icone_heart {
 
     position: relative;
@@ -400,12 +406,17 @@ a {
     display: block;
 }
 
-.fleche_icone  {
+.fleche_icone {
 
     position: absolute;
     align-self: center;
     font-size: 20px;
+    border:none;
+    background-color: white;
     left: 2%;
+    & a{
+        color: black;
+    }
 }
 .titre_menu {
 
@@ -590,6 +601,7 @@ a {
     transform: rotate(0deg);
 }
 
+/* Selecteur de plats */
 
 .card_menu:hover {
 
@@ -605,6 +617,7 @@ a {
     }
 }
 
+/* Fin du selecteur */
 
 
 

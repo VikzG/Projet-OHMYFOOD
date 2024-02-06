@@ -49,6 +49,7 @@ p {
   margin: 0;
 }
 
+/* Loader */
 .loader_home {
   position: absolute;
   background: white;
@@ -58,8 +59,7 @@ p {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  -webkit-animation: opacity_anim 3000ms ease-out both;
-          animation: opacity_anim 3000ms ease-out both;
+  animation: opacity_anim 3000ms ease-out both;
 }
 
 .dot {
@@ -69,42 +69,20 @@ p {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   margin: 0 15px;
-  -webkit-animation: animload infinite 300ms alternate;
-          animation: animload infinite 300ms alternate;
+  animation: animload infinite 300ms alternate;
 }
 
 .d2 {
-  -webkit-animation-delay: 0.05s;
-          animation-delay: 0.05s;
+  animation-delay: 0.05s;
 }
 
 .d3 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-@-webkit-keyframes animload {
-  100% {
-    transform: translatey(-30px);
-  }
+  animation-delay: 0.1s;
 }
 
 @keyframes animload {
   100% {
     transform: translatey(-30px);
-  }
-}
-@-webkit-keyframes opacity_anim {
-  0% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-    z-index: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
   }
 }
 @keyframes opacity_anim {
@@ -120,6 +98,7 @@ p {
     z-index: -1;
   }
 }
+/* Fin du loader */
 .logo {
   display: flex;
   justify-content: center;
@@ -326,6 +305,7 @@ a {
   color: white;
 }
 
+/*  bouton coeur */
 .icone_heart {
   position: relative;
   font-size: 25px;
@@ -365,7 +345,12 @@ a {
   position: absolute;
   align-self: center;
   font-size: 20px;
+  border: none;
+  background-color: white;
   left: 2%;
+}
+.fleche_icone a {
+  color: black;
 }
 
 .titre_menu {
@@ -433,24 +418,21 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  -webkit-animation: menu_apparition 500ms 0ms ease-out forwards;
-          animation: menu_apparition 500ms 0ms ease-out forwards;
+  animation: menu_apparition 500ms 0ms ease-out forwards;
 }
 
 .partie_colonne2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  -webkit-animation: menu_apparition 1500ms 0ms ease-out forwards;
-          animation: menu_apparition 1500ms 0ms ease-out forwards;
+  animation: menu_apparition 1500ms 0ms ease-out forwards;
 }
 
 .partie_colonne3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  -webkit-animation: menu_apparition 2500ms 0ms ease-out forwards;
-          animation: menu_apparition 2500ms 0ms ease-out forwards;
+  animation: menu_apparition 2500ms 0ms ease-out forwards;
 }
 
 .prix {
@@ -496,15 +478,6 @@ a {
   background-color: #F7F7F7;
 }
 
-@-webkit-keyframes menu_apparition {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes menu_apparition {
   0% {
     opacity: 0;
@@ -537,6 +510,7 @@ a {
   transform: rotate(0deg);
 }
 
+/* Selecteur de plats */
 .card_menu:hover .carre_mint {
   width: 59px;
   cursor: pointer;
@@ -546,6 +520,7 @@ a {
   transform: rotate(360deg);
 }
 
+/* Fin du selecteur */
 @media screen and (min-width: 1440px) {
   .logo {
     margin: 2%;
